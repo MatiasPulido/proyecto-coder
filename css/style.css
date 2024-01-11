@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: blue;
+    height: 5rem;
+    position: sticky;
+    top: 0px;
+}
+
+.header>h1 {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+
+}
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grilla {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "logo logo quien productos"
+        "logo logo servicios contacto";
+
+    justify-items: stretch;
+    align-items: stretch;
+
+    justify-content: space-evenly;
+    align-content: space-evenly;}
+
+    .logo {
+        background-color: rgb(0, 0, 0);
+        grid-area: logo;
+    }
+    
+    .nosotros {
+        background-color: #96eb2f;
+        grid-area: quien;
+    }
+    
+    .pedido {
+        background-color: #3b78eb;
+        grid-area: productos;
+    }
+    
+    .sucursales {
+        background-color: #f218e3;
+        grid-area: servicios;
+    }
+    
+    .contacto {
+        background-color: #f3771f;
+        grid-area: contacto;
+    }
+    
+    .grilla-hijo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.top {
+    display: flex;
+    flex-direction: row-reverse;
+    float: right;
+
+    >a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.imagenes-productos ul {
+    display: inline-flex;
+}
+
+.footer {
+    background-color: gray;
+    height: 6rem;
+}
+
+.footer h3 {
+    text-align: center;
+}
+
+.footer ul {
+    text-align: center;
+}
+
+.granel {
+    margin: 0.4rem;
+}
+
+.seleccion {
+    margin: 1rem;
+}
